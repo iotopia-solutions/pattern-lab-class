@@ -1,0 +1,38 @@
+// ===== Core variables ==========
+//   The variables that will be set throughout the site
+
+// ====== Black, white, & Grays ==========
+$black: #000 !default;
+$gray: #444 !default;
+$white: #FFF !default;
+$dark-gray: darken($gray, 6.5%) !default; //#333
+
+// ====== Primary Color Pallette =========
+
+
+// ====== Text Direction =================
+$text-direction: ltr !default;
+$default-float: left !default;
+$opposite-direction: right !default;
+@if $text-direction == ltr {
+  $default-float: left;
+  $opposite-direction: right;
+} 
+@else 
+{
+  $default-float: right;
+  $opposite-direction: left;
+}
+
+// ====== Grid Variables =================
+$column-gutter: 2.6rem;
+$row-width: 100%;
+$total-columns: 12;
+
+// ====== Media Query Variables =================
+
+
+// ======== z-index =======================
+// This will create 10 layers for the z-index
+$starting-z-index: 1000;
+$ending-z-index: 1000 * 10;

@@ -268,5 +268,144 @@ body {
 }
 
 /* ============= End of base ================= */
+/* ============= Start of text =================
+* Set the reoccuring text styles that appear in the theme
+*/
+a {
+  font-size: 13px;
+  font-family: "Open Sans";
+  line-height: 2.308;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+a:active {
+  color: #4285f4;
+}
+
+.primary-title {
+  font-size: 36px;
+  font-family: "Open Sans";
+  line-height: 0.833;
+}
+
+.secondary-title {
+  font-size: 30px;
+  font-family: "Open Sans";
+  color: white;
+}
+
+.subheader-text {
+  font-size: 18px;
+  font-family: "Open Sans";
+}
+
+.description-text {
+  font-size: 14px;
+  font-family: "Open Sans";
+  line-height: 2.143;
+}
+
+.banner-title {
+  font-size: 72px;
+  font-family: "Century Gothic";
+  color: white;
+  line-height: 0.833;
+}
+
+.line {
+  background-image: -moz-linear-gradient(0deg, #00f0ff 0%, #76cefe 39%, #ebacfd 100%);
+  background-image: -webkit-linear-gradient(0deg, #00f0ff 0%, #76cefe 39%, #ebacfd 100%);
+  background-image: -ms-linear-gradient(0deg, #00f0ff 0%, #76cefe 39%, #ebacfd 100%);
+  width: 100px;
+  height: 1px;
+  z-index: 12;
+}
+
+.brand-name {
+  font-size: 27px;
+  font-family: "FuturaPT";
+  color: #1c1c1c;
+  font-weight: bold;
+  text-transform: uppercase;
+  line-height: 1.111;
+}
+
+.pagination-ellipse {
+  border-radius: 50%;
+  background-color: white;
+  opacity: 0.502;
+  width: 14px;
+  height: 14px;
+}
+.pagination-ellipse .active {
+  width: 16px;
+  height: 16px;
+}
+
+.image-box {
+  background-color: #e9e7e7;
+  width: 458px;
+  height: 290px;
+}
+
+.icon-background {
+  border-radius: 50%;
+  background-image: -moz-linear-gradient(42deg, #00f0ff 0%, #76cefe 39%, #ebacfd 100%);
+  background-image: -webkit-linear-gradient(42deg, #00f0ff 0%, #76cefe 39%, #ebacfd 100%);
+  background-image: -ms-linear-gradient(42deg, #00f0ff 0%, #76cefe 39%, #ebacfd 100%);
+  width: 150px;
+  height: 150px;
+}
+
+/* ============= End of base ================= */
+/* ============= Start of forms =================
+* Set the reoccuring form styles that appear in the theme
+*/
+.input-field {
+  border-style: solid;
+  border-width: 1px;
+  border-color: #444957;
+  border-radius: 3px;
+  background-color: rgba(33, 33, 33, 0);
+  width: 502px;
+  height: 62px;
+}
+
+/* ============= End of forms ================= */
+/* ============= Start of buttons =================
+* Set the reoccuring button styles that appear in the theme
+*/
+.button {
+  color: white;
+  font-weight: bold;
+  text-align: center;
+  font-size: 14px;
+  font-family: "Open Sans";
+  line-height: 2.143;
+}
+
+.button--action {
+  border-style: solid;
+  border-width: 1px;
+  border-color: white;
+  border-radius: 3px;
+  background-color: rgba(66, 133, 244, 0);
+  width: 272px;
+  height: 57px;
+}
+
+.button--info {
+  border-style: solid;
+  border-width: 1px;
+  border-color: #2c6cd6;
+  border-radius: 3px;
+  background-color: #4285f4;
+  box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.2);
+  width: 268px;
+  height: 53px;
+}
+
+/* ============= End of buttons ================= */
 
 /*# sourceMappingURL=style.css.map */

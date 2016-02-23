@@ -1,0 +1,90 @@
+/* ============= Start of text =================
+* Set the reoccuring text styles that appear in the theme
+*/
+a {
+  font-size: 13px;
+  font-family: "Open Sans";
+  line-height: 2.308;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-decoration: none; //not in mock up
+  &:active {
+    color: rgb(66, 133, 244);
+  }
+}
+
+.primary-title {
+  font-size: 36px;
+  font-family: "Open Sans";
+  line-height: 0.833;
+}
+
+.secondary-title {
+  font-size: 30px; 
+  font-family: "Open Sans";
+  color: rgb(255, 255, 255);
+}
+
+.subheader-text {
+  font-size: 18px;
+  font-family: "Open Sans";
+}
+
+.description-text {
+  font-size: 14px;
+  font-family: "Open Sans";
+  line-height: 2.143;
+}
+
+.banner-title {
+  font-size: 72px;
+  font-family: "Century Gothic";
+  color: rgb(255, 255, 255);
+  line-height: 0.833;
+}
+
+.line {
+  background-image: -moz-linear-gradient( 0deg, rgb(0,240,255) 0%, rgb(118,206,254) 39%, rgb(235,172,253) 100%);
+  background-image: -webkit-linear-gradient( 0deg, rgb(0,240,255) 0%, rgb(118,206,254) 39%, rgb(235,172,253) 100%);
+  background-image: -ms-linear-gradient( 0deg, rgb(0,240,255) 0%, rgb(118,206,254) 39%, rgb(235,172,253) 100%);
+  width: 100px;
+  height: 1px;
+  z-index: 12;
+}
+
+.brand-name {
+  font-size: 27px;
+  font-family: "FuturaPT";
+  color: rgb(28, 28, 28);
+  font-weight: bold;
+  text-transform: uppercase;
+  line-height: 1.111;
+}
+
+.pagination-ellipse {
+  border-radius: 50%;
+  background-color: rgb(255, 255, 255);
+  opacity: 0.502;
+  width: 14px;
+  height: 14px;
+  .active {
+    width: 16px;
+    height: 16px;
+  }
+}
+
+.image-box {
+  background-color: rgb(233, 231, 231);
+  width: 458px;
+  height: 290px;
+}
+ 
+.icon-background {
+  border-radius: 50%;
+  background-image: -moz-linear-gradient( 42deg, rgb(0,240,255) 0%, rgb(118,206,254) 39%, rgb(235,172,253) 100%);
+  background-image: -webkit-linear-gradient( 42deg, rgb(0,240,255) 0%, rgb(118,206,254) 39%, rgb(235,172,253) 100%);
+  background-image: -ms-linear-gradient( 42deg, rgb(0,240,255) 0%, rgb(118,206,254) 39%, rgb(235,172,253) 100%);
+  width: 150px;
+  height: 150px;
+}
+/* ============= End of base ================= */

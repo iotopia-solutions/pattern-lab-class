@@ -94,5 +94,8 @@
 		"text": "DEFAULT",
 		"hasClass": "",
 		"className": "button"
+	},
+	"input-field": {
+		"placeholder": ""
 	}
 }

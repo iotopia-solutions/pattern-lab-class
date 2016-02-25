@@ -92,8 +92,8 @@
 	],
 	"buttons": {
 		"text": "DEFAULT",
-		"hasClass": "",
-		"className": "button"
+		"hasClass": true,
+		"className": ""
 	},
 	"input-field": {
 		"placeholder": ""

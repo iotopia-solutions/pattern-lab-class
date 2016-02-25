@@ -315,6 +315,7 @@ body {
   font-family: "Century Gothic";
   color: white;
   line-height: 0.833;
+  text-transform: uppercase;
 }
 
 .line {
@@ -4835,6 +4836,8 @@ a .icon-rotate-90:before, a .icon-rotate-180:before, a .icon-rotate-270:before, 
   font-size: 14px;
   font-family: "Open Sans";
   line-height: 2.143;
+  width: 272px;
+  height: 57px;
 }
 
 .button--action {
@@ -4866,6 +4869,64 @@ a .icon-rotate-90:before, a .icon-rotate-180:before, a .icon-rotate-270:before, 
   display: flex;
   flex-direction: row;
   align-items: center;
+}
+
+.revolution-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: black;
+}
+.revolution-content .primary-title {
+  color: white;
+}
+
+.pagination-container {
+  background-color: gray;
+  display: flex;
+  justify-content: space-around;
+}
+
+.image-box-block {
+  width: 458px;
+}
+
+.image-box-block--container {
+  width: 80%;
+  display: flex;
+  justify-content: center;
+}
+
+.icon-box--container {
+  width: 20%;
+  display: flex;
+  justify-content: center;
+}
+
+.icon-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.contact-block {
+  background-color: black;
+  width: 15%;
+  padding: 20px;
+}
+.contact-block .subheader-text {
+  color: white;
+}
+
+.features-icon-block {
+  display: flex;
+}
+.features-icon-block .features-icon-block--icon {
+  flex: 1;
+}
+.features-icon-block .features-icon-block--info {
+  flex: 2;
 }
 
 /*# sourceMappingURL=style.css.map */

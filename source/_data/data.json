@@ -92,7 +92,7 @@
 	],
 	"buttons": {
 		"text": "DEFAULT",
-		"hasClass": "",
+		"hasClass": true,
 		"className": "button"
 	},
 	"input-field": {

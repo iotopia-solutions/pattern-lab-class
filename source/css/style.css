@@ -363,7 +363,28 @@ body {
   height: 150px;
 }
 
-.placeholder-text {
+::-webkit-input-placeholder {
+  font-size: 16px;
+  font-family: "Open Sans";
+  color: #999999;
+  text-align: left;
+}
+
+::-moz-placeholder {
+  font-size: 16px;
+  font-family: "Open Sans";
+  color: #999999;
+  text-align: left;
+}
+
+:-ms-input-placeholder {
+  font-size: 16px;
+  font-family: "Open Sans";
+  color: #999999;
+  text-align: left;
+}
+
+:-moz-placeholder {
   font-size: 16px;
   font-family: "Open Sans";
   color: #999999;
@@ -4838,5 +4859,13 @@ a .icon-rotate-90:before, a .icon-rotate-180:before, a .icon-rotate-270:before, 
 }
 
 /* ============= End of buttons ================= */
+/* ============= Start of container =================
+* Set the reoccuring container styles that appear in the theme
+*/
+.brand-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
 
 /*# sourceMappingURL=style.css.map */

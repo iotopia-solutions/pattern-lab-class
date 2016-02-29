@@ -4970,6 +4970,16 @@ a .icon-rotate-90:before, a .icon-rotate-180:before, a .icon-rotate-270:before, 
   padding: 20px;
 }
 
+.features-icon-list {
+  padding: 20px;
+}
+.features-icon-list .features-icon-list--row {
+  width: 85%;
+  justify-content: space-around;
+  flex-direction: row;
+  display: flex;
+}
+
 /* ============= End of containers ================= */
 /* ============= Start of navigation =================
 * Set the reoccuring navigation styles that appear in the theme

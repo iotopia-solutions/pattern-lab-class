@@ -4953,5 +4953,35 @@ a .icon-rotate-90:before, a .icon-rotate-180:before, a .icon-rotate-270:before, 
 }
 
 /* ============= End of containers ================= */
+/* ============= Start of navigation =================
+* Set the reoccuring navigation styles that appear in the theme
+*/
+.header {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.header .brand-container {
+  flex: 1;
+  justify-content: center;
+}
+.header .links {
+  flex: 2;
+  justify-content: space-around;
+  display: flex;
+}
+
+.revolution-slider {
+  display: flex;
+  background-color: black;
+}
+.revolution-slider .next-arrow-container {
+  flex: 1;
+}
+.revolution-slider .revolution-content {
+  flex: 2;
+}
+
+/* ============= End of navigation ================= */
 
 /*# sourceMappingURL=style.css.map */

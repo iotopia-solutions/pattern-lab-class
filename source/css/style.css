@@ -4862,6 +4862,9 @@ a .icon-rotate-90:before, a .icon-rotate-180:before, a .icon-rotate-270:before, 
 }
 
 /* ============= End of buttons ================= */
+/* ============= Start of container =================
+* Set the reoccuring container styles that appear in the theme
+*/
 .brand-container {
   display: flex;
   flex-direction: row;
@@ -4925,5 +4928,60 @@ a .icon-rotate-90:before, a .icon-rotate-180:before, a .icon-rotate-270:before, 
 .features-icon-block .features-icon-block--info {
   flex: 2;
 }
+
+.portfolio-item {
+  background-color: #f0f6fd;
+  width: 480px;
+  height: 420px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+.portfolio-item .secondary-title {
+  color: black;
+}
+
+.portfolio-item--image {
+  background-image: url("https://www.petfinder.com/wp-content/uploads/2012/11/140272627-grooming-needs-senior-cat-632x475.jpg");
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* ============= End of containers ================= */
+/* ============= Start of navigation =================
+* Set the reoccuring navigation styles that appear in the theme
+*/
+.header {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.header .brand-container {
+  flex: 1;
+  justify-content: center;
+}
+.header .links {
+  flex: 2;
+  justify-content: space-around;
+  display: flex;
+}
+
+.revolution-slider {
+  display: flex;
+  background-color: black;
+}
+.revolution-slider .next-arrow-container {
+  flex: 1;
+}
+.revolution-slider .revolution-content {
+  flex: 2;
+}
+
+/* ============= End of navigation ================= */
 
 /*# sourceMappingURL=style.css.map */

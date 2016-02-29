@@ -1,0 +1,30 @@
+/* ============= Start of navigation =================
+* Set the reoccuring navigation styles that appear in the theme
+*/
+.header {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  .brand-container {
+    flex: 1;
+    justify-content: center;
+  }
+  .links {
+    flex: 2;
+    justify-content: space-around;
+    display: flex;
+  }
+}
+
+.revolution-slider {
+  display: flex;
+  background-color: black;
+  .next-arrow-container {
+    flex: 1;
+  }
+  .revolution-content {
+    flex: 2;
+  }
+}
+
+/* ============= End of navigation ================= */

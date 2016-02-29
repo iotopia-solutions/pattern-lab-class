@@ -97,5 +97,9 @@
 	},
 	"input-field": {
 		"placeholder": ""
+	},
+	"portfolio-item": {
+		"hasImage": true,
+		"className": "portfolio-item--image"
 	}
 }

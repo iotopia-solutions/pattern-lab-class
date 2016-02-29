@@ -4929,4 +4929,29 @@ a .icon-rotate-90:before, a .icon-rotate-180:before, a .icon-rotate-270:before, 
   flex: 2;
 }
 
+.portfolio-item {
+  background-color: #f0f6fd;
+  width: 480px;
+  height: 420px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+.portfolio-item .secondary-title {
+  color: black;
+}
+
+.portfolio-item--image {
+  background-image: url("https://www.petfinder.com/wp-content/uploads/2012/11/140272627-grooming-needs-senior-cat-632x475.jpg");
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* ============= End of containers ================= */
+
 /*# sourceMappingURL=style.css.map */

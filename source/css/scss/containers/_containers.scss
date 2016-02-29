@@ -101,4 +101,14 @@
   padding: 20px;
 }
 
+.features-icon-list {
+  padding: 20px;
+  .features-icon-list--row {
+    width: 85%;
+    justify-content: space-around;
+    flex-direction: row;
+    display: flex;
+  }
+}
+
 /* ============= End of containers ================= */

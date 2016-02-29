@@ -304,12 +304,14 @@ body {
 .subheader-text {
   font-size: 18px;
   font-family: "Open Sans";
+  margin-bottom: 20px;
 }
 
 .description-text {
   font-size: 14px;
   font-family: "Open Sans";
   line-height: 2.143;
+  margin-bottom: 20px;
 }
 
 .banner-title {
@@ -327,7 +329,7 @@ body {
   background-image: -ms-linear-gradient(0deg, #00f0ff 0%, #76cefe 39%, #ebacfd 100%);
   width: 100px;
   height: 1px;
-  z-index: 12;
+  margin-bottom: 20px;
 }
 
 .brand-name {
@@ -4960,6 +4962,11 @@ a .icon-rotate-90:before, a .icon-rotate-180:before, a .icon-rotate-270:before, 
   background-color: green;
   display: flex;
   justify-content: space-around;
+  padding: 20px;
+}
+
+.info-block {
+  width: 50%;
   padding: 20px;
 }
 

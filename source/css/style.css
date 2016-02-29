@@ -4956,6 +4956,13 @@ a .icon-rotate-90:before, a .icon-rotate-180:before, a .icon-rotate-270:before, 
   align-items: center;
 }
 
+.call-to-action {
+  background-color: green;
+  display: flex;
+  justify-content: space-around;
+  padding: 20px;
+}
+
 /* ============= End of containers ================= */
 /* ============= Start of navigation =================
 * Set the reoccuring navigation styles that appear in the theme

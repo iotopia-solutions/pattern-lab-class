@@ -17,14 +17,21 @@
 }
 
 .revolution-slider {
-  display: flex;
-  background-color: black;
-  .next-arrow-container {
-    flex: 1;
+   background-color: black;
+   padding: 200px 0px 30px;
+  .revolution-slider--content {
+    display: flex;
+    .next-arrow-container {
+      flex: 1;
+    }
+    .revolution-content {
+      flex: 2;
+    }
   }
-  .revolution-content {
-    flex: 2;
+  .revolution-slider--pagination {
+    display: flex;
+    justify-content: center;
+    margin-top: 10%;
   }
 }
-
 /* ============= End of navigation ================= */

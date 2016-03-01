@@ -4828,6 +4828,29 @@ a .icon-rotate-90:before, a .icon-rotate-180:before, a .icon-rotate-270:before, 
   background-color: rgba(33, 33, 33, 0);
   width: 502px;
   height: 62px;
+  margin-bottom: 20px;
+}
+
+.form {
+  background-color: black;
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  justify-content: flex-end;
+  padding: 5%;
+}
+.form .line {
+  margin: 20px auto;
+}
+.form .form--header {
+  text-align: center;
+}
+.form fieldset {
+  border: 0;
+}
+.form .subheader-text,
+.form .primary-title {
+  color: white;
 }
 
 /* ============= End of forms ================= */

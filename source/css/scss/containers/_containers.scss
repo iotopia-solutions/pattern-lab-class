@@ -111,5 +111,21 @@
   }
 }
 
+.footer {
+  background-color: black;
+  .footer--brand {
+    display: flex;
+    flex-direction: column;
+  }
+  .footer--content-block {
+    display: flex;
+    justify-content: space-around;
+    .brand-name {
+      color: white;
+    }
+  }
+  .copyright {
+    color: white;
+  }
+}
 /* ============= End of containers ================= */
-

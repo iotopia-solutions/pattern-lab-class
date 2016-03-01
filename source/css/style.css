@@ -4980,6 +4980,24 @@ a .icon-rotate-90:before, a .icon-rotate-180:before, a .icon-rotate-270:before, 
   display: flex;
 }
 
+.footer {
+  background-color: black;
+}
+.footer .footer--brand {
+  display: flex;
+  flex-direction: column;
+}
+.footer .footer--content-block {
+  display: flex;
+  justify-content: space-around;
+}
+.footer .footer--content-block .brand-name {
+  color: white;
+}
+.footer .copyright {
+  color: white;
+}
+
 /* ============= End of containers ================= */
 /* ============= Start of navigation =================
 * Set the reoccuring navigation styles that appear in the theme

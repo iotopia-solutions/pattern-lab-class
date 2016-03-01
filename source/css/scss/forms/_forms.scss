@@ -9,6 +9,29 @@
   background-color: rgba(33, 33, 33, 0);
   width: 502px;
   height: 62px;
+  margin-bottom: 20px;
+}
+
+.form {
+  background-color: black;
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  justify-content: flex-end;
+  padding: 5%;
+  .line {
+    margin: 20px auto;
+  }
+  .form--header {
+    text-align: center;
+  }
+  fieldset {
+    border: 0;
+  }
+  .subheader-text,
+  .primary-title {
+    color: white;
+  }
 }
 
 

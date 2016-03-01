@@ -2,6 +2,11 @@
 * Set the reoccuring container styles that appear in the theme
 */
 
+.sg-main,
+.sg-single-pattern {
+  background-color: rgba(12, 22, 6, .17);
+}
+
 .brand-container {
   display: flex;
   flex-direction: row;
@@ -12,7 +17,6 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: black;
   .primary-title {
     color: white;
   }
@@ -35,7 +39,8 @@
 }
 
 .icon-box--container {
-  width: 20%;
+  width: 30%;
+  padding: 20px;
   display: flex;
   justify-content: center;
 }
@@ -48,21 +53,24 @@
 }
 
 .contact-block {
-  background-color: black;
   width: 15%;
-  padding: 20px;
   .subheader-text {
     color: white;
+  }
+  .description-text {
+    color: rgb(153, 153, 153);
   }
 }
 
 .features-icon-block {
+  width: 40%;
   display: flex;
+  margin: 30px;
   .features-icon-block--icon {
     flex: 1;
   }
   .features-icon-block--info {
-    flex: 2;
+    flex: 4;
   }
 }
 
@@ -90,7 +98,7 @@
 }
 
 .call-to-action {
-  background-color: green;
+  background-color: rgb(130, 180, 64);
   display: flex;
   justify-content: space-around;
   padding: 20px;
@@ -103,6 +111,10 @@
 
 .features-icon-list {
   padding: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-around;
   .features-icon-list--row {
     width: 85%;
     justify-content: space-around;
@@ -112,8 +124,12 @@
 }
 
 .footer {
-  background-color: black;
+  background-color: rgb(36, 36, 39);
+  padding: 20px 100px 20px 100px;
   .footer--brand {
+    a {
+      margin: 0 auto;
+    }
     display: flex;
     flex-direction: column;
   }

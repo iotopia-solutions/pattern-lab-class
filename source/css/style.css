@@ -321,6 +321,7 @@ body {
   line-height: 0.833;
   text-transform: uppercase;
   margin-bottom: 20px;
+  letter-spacing: 5px;
 }
 
 .line {
@@ -358,6 +359,7 @@ body {
   background-color: #e9e7e7;
   width: 458px;
   height: 290px;
+  margin-bottom: 20px;
 }
 
 .icon-background {
@@ -367,6 +369,13 @@ body {
   background-image: -ms-linear-gradient(42deg, #00f0ff 0%, #76cefe 39%, #ebacfd 100%);
   width: 150px;
   height: 150px;
+  margin-bottom: 20px;
+}
+
+.placeholder-text {
+  font-size: 16px;
+  font-family: "Open Sans";
+  line-height: 2.25;
 }
 
 ::-webkit-input-placeholder {
@@ -407,6 +416,14 @@ body {
 .fa-angle-right {
   color: white;
   line-height: 1.875;
+  border-radius: 3px;
+  background-color: black;
+  opacity: 0.4;
+  padding: 15px 20px;
+}
+
+.logo {
+  margin: 10px;
 }
 
 /* ============= End of base ================= */
@@ -4829,6 +4846,7 @@ a .icon-rotate-90:before, a .icon-rotate-180:before, a .icon-rotate-270:before, 
   width: 502px;
   height: 62px;
   margin-bottom: 20px;
+  padding: 20px;
 }
 
 .form {
@@ -4852,13 +4870,20 @@ a .icon-rotate-90:before, a .icon-rotate-180:before, a .icon-rotate-270:before, 
 .form .primary-title {
   color: white;
 }
+.form .button {
+  width: 502px;
+}
 
 /* ============= End of forms ================= */
 /* ============= Start of buttons =================
 * Set the reoccuring button styles that appear in the theme
 */
 .button {
-  color: white;
+  border-color: black;
+  border-style: solid;
+  border-width: 1px;
+  border-radius: 3px;
+  background-color: black;
   font-weight: bold;
   text-align: center;
   font-size: 14px;
@@ -4867,6 +4892,7 @@ a .icon-rotate-90:before, a .icon-rotate-180:before, a .icon-rotate-270:before, 
   width: 272px;
   height: 57px;
   margin-bottom: 20px;
+  color: white;
 }
 
 .button--action {
@@ -4894,6 +4920,11 @@ a .icon-rotate-90:before, a .icon-rotate-180:before, a .icon-rotate-270:before, 
 /* ============= Start of container =================
 * Set the reoccuring container styles that appear in the theme
 */
+.sg-main,
+.sg-single-pattern {
+  background-color: rgba(12, 22, 6, 0.17);
+}
+
 .brand-container {
   display: flex;
   flex-direction: row;
@@ -4904,7 +4935,6 @@ a .icon-rotate-90:before, a .icon-rotate-180:before, a .icon-rotate-270:before, 
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: black;
 }
 .revolution-content .primary-title {
   color: white;
@@ -4927,7 +4957,8 @@ a .icon-rotate-90:before, a .icon-rotate-180:before, a .icon-rotate-270:before, 
 }
 
 .icon-box--container {
-  width: 20%;
+  width: 30%;
+  padding: 20px;
   display: flex;
   justify-content: center;
 }
@@ -4940,22 +4971,25 @@ a .icon-rotate-90:before, a .icon-rotate-180:before, a .icon-rotate-270:before, 
 }
 
 .contact-block {
-  background-color: black;
   width: 15%;
-  padding: 20px;
 }
 .contact-block .subheader-text {
   color: white;
 }
+.contact-block .description-text {
+  color: #999999;
+}
 
 .features-icon-block {
+  width: 40%;
   display: flex;
+  margin: 30px;
 }
 .features-icon-block .features-icon-block--icon {
   flex: 1;
 }
 .features-icon-block .features-icon-block--info {
-  flex: 2;
+  flex: 4;
 }
 
 .portfolio-item {
@@ -4982,7 +5016,7 @@ a .icon-rotate-90:before, a .icon-rotate-180:before, a .icon-rotate-270:before, 
 }
 
 .call-to-action {
-  background-color: green;
+  background-color: #82b440;
   display: flex;
   justify-content: space-around;
   padding: 20px;
@@ -4995,6 +5029,10 @@ a .icon-rotate-90:before, a .icon-rotate-180:before, a .icon-rotate-270:before, 
 
 .features-icon-list {
   padding: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-around;
 }
 .features-icon-list .features-icon-list--row {
   width: 85%;
@@ -5004,11 +5042,15 @@ a .icon-rotate-90:before, a .icon-rotate-180:before, a .icon-rotate-270:before, 
 }
 
 .footer {
-  background-color: black;
+  background-color: #242427;
+  padding: 20px 100px 20px 100px;
 }
 .footer .footer--brand {
   display: flex;
   flex-direction: column;
+}
+.footer .footer--brand a {
+  margin: 0 auto;
 }
 .footer .footer--content-block {
   display: flex;
@@ -5029,19 +5071,21 @@ a .icon-rotate-90:before, a .icon-rotate-180:before, a .icon-rotate-270:before, 
   display: flex;
   justify-content: space-around;
   align-items: center;
+  padding: 20px;
+  background-color: white;
 }
 .header .brand-container {
   flex: 1;
   justify-content: center;
 }
 .header .links {
-  flex: 2;
+  flex: 3;
   justify-content: space-around;
   display: flex;
 }
 
 .revolution-slider {
-  background-color: black;
+  background-color: #3c444b;
   padding: 200px 0px 30px;
 }
 .revolution-slider .revolution-slider--content {

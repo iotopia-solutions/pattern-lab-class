@@ -52,13 +52,13 @@
 #patternlab-html, #patternlab-body {
   margin: 0;
   padding: 0;
-  background: #ddd;
+  background: #D4D8DF;
   -webkit-text-size-adjust: 100%;
 }
 
 .sg-nav-wrapper {
   overflow: hidden;
-  background: #ddd;
+  background: #D4D8DF;
 }
 
 .is-vishidden {
@@ -87,7 +87,7 @@
 \*------------------------------------*/
 /* Header */
 .sg-header {
-  background: #222;
+  background: white;
   color: #fff;
   font-family: "HelveticaNeue", "Helvetica", "Arial", sans-serif;
   text-transform: uppercase;
@@ -96,6 +96,7 @@
   left: 0;
   z-index: 2;
   width: 100%;
+  border-bottom: 1px solid #5C6568;
 }
 .sg-header * {
   -moz-box-sizing: border-box;
@@ -111,8 +112,8 @@
   border-bottom: 1px solid rgba(255, 255, 255, 0.05);
 }
 .sg-header a {
-  font-size: 70%;
-  color: #808080;
+  font-size: 80%;
+  color: #5C6568;
   text-decoration: none;
   display: block;
   line-height: 1;
@@ -129,7 +130,7 @@
   transition: color 0.15s ease-out;
 }
 .sg-header a:hover, .sg-header a:focus, .sg-header a.active {
-  color: #fff;
+  color: #126E97;
   background: rgba(255, 255, 255, 0.05);
 }
 .sg-header ol ol ol a {
@@ -156,6 +157,11 @@
   }
 }
 
+.sg-nav-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
 @media all and (max-width: 48em) {
   .sg-nav-container {
     overflow: hidden;
@@ -198,7 +204,7 @@
 .sg-acc-handle:after {
   content: ' +';
   float: right;
-  font-size: 70%;
+  font-size: 80%;
 }
 @media all and (min-width: 48em) {
   .sg-acc-handle:after {
@@ -233,11 +239,19 @@
   transition: max-height 0.1s ease-out;
 }
 .sg-acc-panel li {
-  background: #222;
+  background: white;
 }
 .sg-acc-panel.active {
   max-height: 120em;
   overflow: auto;
+  border-top: 1px solid #5C6568;
+}
+.sg-acc-panel.active li {
+  border-left: 1px solid #5C6568;
+  border-right: 1px solid #5C6568;
+}
+.sg-acc-panel.active li:last-child {
+  border-bottom: 1px solid #5C6568;
 }
 .sg-acc-panel.sg-right {
   position: absolute;
@@ -256,10 +270,6 @@
 /* Controls (sizing, view mode) */
 .sg-controls {
   border: 0;
-  position: absolute;
-  top: 0;
-  right: 0;
-  z-index: 2;
 }
 
 .sg-control-trigger {
@@ -296,17 +306,17 @@
 }
 .sg-control .sg-input:active, .sg-control .sg-input:focus {
   outline: 0;
-  background: #999;
-  color: #000;
+  background: #D4D8DF;
+  color: #189BBE;
 }
 
 .sg-current-size {
-  font-size: 70%;
-  color: #808080;
+  font-size: 80%;
+  color: #5C6568;
   padding: 0.85em 0.7em;
 }
 .sg-current-size:hover .sg-input {
-  background: #999;
+  background: #D4D8DF;
   color: #000;
 }
 @media all and (min-width: 72em) {
@@ -443,11 +453,13 @@ span.sg-pattern-state:before {
   text-align: center;
   width: 100%;
   position: fixed;
-  top: 2em;
+  top: 1em;
   bottom: 0;
   left: 0;
   right: 0;
   z-index: 0;
+  background-color: white;
+  padding-top: 40px;
 }
 #sg-vp-wrap.wrap-animate {
   -webkit-transition: left 0.3s ease-out;
@@ -553,6 +565,8 @@ span.sg-pattern-state:before {
 .sg-pattern {
   margin-bottom: 2em;
   position: relative;
+  margin: 0 auto;
+  width: 95%;
 }
 
 /* Section Head */
@@ -562,16 +576,16 @@ span.sg-pattern-state:before {
   font-size: 100%;
   font-weight: normal;
   padding: 1em 0;
-  border-bottom: 1px solid #808080;
+  border-bottom: 1px solid #5C6568;
 }
 .sg-pattern-head a {
   display: block;
-  color: #808080;
+  color: #5C6568;
   text-decoration: none;
   cursor: pointer;
 }
 .sg-pattern-head a:hover {
-  color: #222;
+  color: #126E97;
 }
 
 .sg-view-container {
@@ -581,8 +595,8 @@ span.sg-pattern-state:before {
   font-family: "HelveticaNeue", "Helvetica", "Arial", sans-serif;
   line-height: 1.4;
   font-size: 90%;
-  background: #222;
-  color: #808080;
+  background: #242422;
+  color: #5C6568;
   position: fixed;
   top: auto;
   padding: 1em;
@@ -595,7 +609,7 @@ span.sg-pattern-state:before {
   overflow-x: hidden;
 }
 .sg-view-container a {
-  color: #999;
+  color: #D4D8DF;
 }
 .sg-view-container pre {
   padding: 0 1em;
@@ -624,16 +638,16 @@ span.sg-pattern-state:before {
 
 .has-annotation {
   cursor: help !important;
-  box-shadow: 0 0 10px #808080;
+  box-shadow: 0 0 10px #5C6568;
 }
 .has-annotation a, .has-annotation input {
   cursor: help !important;
 }
 .has-annotation:hover {
-  box-shadow: 0 0 10px #222;
+  box-shadow: 0 0 10px #D4D8DF;
 }
 .has-annotation.active {
-  box-shadow: inset 0 0 20px #808080;
+  box-shadow: inset 0 0 20px #5C6568;
 }
 
 .annotation-tip {
@@ -671,8 +685,8 @@ span.sg-pattern-state:before {
 
 .sg-code, .sg-annotations {
   clear: both;
-  background: #ddd;
-  color: #222;
+  background: white;
+  color: rgba(88, 88, 90, 0.71);
   padding: 1em 0.5em;
   margin: 1em 0;
 }
@@ -693,18 +707,18 @@ span.sg-pattern-state:before {
 .sg-code-contains {
   margin-bottom: 1rem;
   font-size: 85%;
-  color: #808080;
+  color: #5C6568;
 }
 .sg-code-contains code {
   padding: 0.2em;
   background: rgba(0, 0, 0, 0.3);
-  color: #999;
+  color: #D4D8DF;
   position: relative;
   top: -2px;
 }
 
 .sg-code-head {
-  color: #808080;
+  color: #5C6568;
   font-size: 1em;
 }
 
@@ -835,6 +849,11 @@ div.clear {
 
 .sg-icon-eye:before {
   content: "\e60b";
+}
+
+.sg-nav-content--left {
+  display: flex;
+  align-items: center;
 }
 
 /******************************************************************/

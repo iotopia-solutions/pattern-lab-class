@@ -48,11 +48,11 @@
 $sg-font : "HelveticaNeue", "Helvetica", "Arial", sans-serif;
 
 /* Style Guide Interface Colors */ 
-$sg-primary : #222;
-$sg-secondary : #808080;
-$sg-tertiary : #ddd;
+$sg-primary : #D4D8DF;
+$sg-secondary : #5C6568;
+$sg-tertiary : #D4D8DF;
 $sg-quaternary : #fff;
-$sg-quinary : #999;
+$sg-quinary : #D4D8DF;
 $sg-tint : rgba(255,255,255,0.05);
 $sg-tint-2 : rgba(255,255,255,0.25);
 $sg-tone : rgba(0,0,0,0.1);
@@ -60,7 +60,7 @@ $sg-tone-2 : rgba(0,0,0,0.3);
 
 /* Typography */
 $sg-font-size-norm : 100%;
-$sg-font-size-sm : 70%;
+$sg-font-size-sm : 80%;
 $sg-font-size-large : 120%;
 
 /* Defaults */
@@ -149,7 +149,7 @@ $animate-quick: 0.2s;
 \*------------------------------------*/
 /* Header */
 .sg-header {
-	background: $sg-primary;
+	background: white;
 	color: $sg-quaternary;
 	font-family: $sg-font;
 	text-transform: uppercase;
@@ -158,6 +158,7 @@ $animate-quick: 0.2s;
 	left: 0;
 	z-index: 2;
 	width: 100%;
+  border-bottom: 1px solid $sg-secondary;
 
 	* {
 	  -moz-box-sizing: border-box;
@@ -186,7 +187,7 @@ $animate-quick: 0.2s;
 		@include sg-transition(color,0.15s,ease-out);
 		
 		&:hover, &:focus, &.active {
-			color: $sg-quaternary;
+			color: #126E97;
 			background: $sg-tint;
 		}
 	}
@@ -219,6 +220,9 @@ $animate-quick: 0.2s;
 }
 
 .sg-nav-container {
+	display: flex;
+  align-items: center;
+  justify-content: space-between;
 	@media all and (max-width: $sg-bp-med) {
 		overflow: hidden;
 		max-height: 0;
@@ -293,12 +297,20 @@ $animate-quick: 0.2s;
 	@include sg-transition(max-height,0.1s,ease-out);
 
 	li {
-		background: $sg-primary;
+		background: white;
 	}
 
 	&.active {
 		max-height: 120em;
 		overflow: auto;
+		border-top: 1px solid $sg-secondary;
+		li {
+			border-left: 1px solid $sg-secondary;
+	    border-right: 1px solid $sg-secondary;
+		}
+		li:last-child {
+			border-bottom: 1px solid $sg-secondary;
+		}
 	}
 
 	&.sg-right {
@@ -323,10 +335,6 @@ $animate-quick: 0.2s;
 /* Controls (sizing, view mode) */
 .sg-controls {
 	border: 0;
-	position: absolute;
-	top: 0;
-	right: 0;
-	z-index: 2;
 }
 
 .sg-control-trigger {
@@ -363,13 +371,13 @@ $animate-quick: 0.2s;
 		&:active, &:focus {
 			outline: 0;
 			background: $sg-quinary;
-			color: #000;
+			color: #189BBE;
 		}
 	}
 }
 
 .sg-current-size {
-	font-size: 70%;
+	font-size: $sg-font-size-sm;
 	color: $sg-secondary;
 	padding: 0.85em 0.7em;
 
@@ -528,11 +536,13 @@ span.sg-pattern-state:before {
 	text-align: center;
 	width: 100%;
 	position: fixed;
-	top: $offset-top;
+	top: 1em;
 	bottom: 0;
 	left: 0;
 	right: 0;
 	z-index: 0;
+	background-color: white;
+	padding-top: 40px;
 
 	&.wrap-animate {
 		-webkit-transition: left 0.3s ease-out;
@@ -654,6 +664,8 @@ span.sg-pattern-state:before {
 	margin-bottom: $sg-doublespace;
 	position: relative; //Prevents absolutely-positioned elements from floating to the top
 	@extend .sg-cf;
+	margin: 0 auto;
+  width: 95%;
 }
 
 /* Section Head */
@@ -672,7 +684,7 @@ span.sg-pattern-state:before {
 		cursor: pointer;
 		
 		&:hover {
-			color: $sg-primary;
+			color: #126E97;
 		}
 	}
 }
@@ -685,7 +697,7 @@ span.sg-pattern-state:before {
 	font-family: $sg-font;
 	line-height: 1.4;
 	font-size: 90%;
-	background: $sg-primary;
+	background: #242422;
 	color: $sg-secondary;
 	position: fixed;
 	top: auto;
@@ -786,8 +798,8 @@ span.sg-pattern-state:before {
 
 .sg-code, .sg-annotations {
 	clear: both;
-	background: $sg-tertiary;
-	color: $sg-primary;
+	background: white;
+	color: rgba(88, 88, 90, 0.71);
 	padding: $sg-pad $sg-pad-half;
 	margin: $sg-space 0;
 
@@ -947,6 +959,12 @@ div.clear {
 }
 .sg-icon-eye:before {
 	content: "\e60b";
+}
+
+//custom pattern lab styles
+.sg-nav-content--left {
+	display: flex;
+	align-items: center;
 }
 
 /******************************************************************/

@@ -1,0 +1,39 @@
+/* ============= Start of navigation =================
+* Set the reoccuring navigation styles that appear in the theme
+*/
+.header {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 20px;
+  background-color: white;
+  .brand-container {
+    flex: 1;
+    justify-content: center;
+  }
+  .links {
+    flex: 3;
+    justify-content: space-around;
+    display: flex;
+  }
+}
+
+.revolution-slider {
+   background-color: rgb(60, 68, 75);
+   padding: 200px 0px 30px;
+  .revolution-slider--content {
+    display: flex;
+    .next-arrow-container {
+      flex: 1;
+    }
+    .revolution-content {
+      flex: 2;
+    }
+  }
+  .revolution-slider--pagination {
+    display: flex;
+    justify-content: center;
+    margin-top: 10%;
+  }
+}
+/* ============= End of navigation ================= */

@@ -1,0 +1,9 @@
+{
+  "button-action": {
+    "buttons": {
+      "text": "ACTION",
+      "hasClass": true,
+      "className": "button button--action"
+    }
+  }
+}

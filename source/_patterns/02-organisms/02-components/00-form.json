@@ -1,0 +1,12 @@
+{
+  "button-info": {
+    "buttons": {
+      "text": "INFO",
+      "hasClass": true,
+      "className": "button button--info"
+    }
+  },
+  "input-field": {
+    "placeholder": "placeholder text"
+  }
+}

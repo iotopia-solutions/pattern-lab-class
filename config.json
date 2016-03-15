@@ -13,10 +13,10 @@
  		"m": true,
  		"l": true,
  		"full": true,
- 		"random": true,
+ 		"random": false,
  		"disco": true,
  		"hay": true,
- 		"mqs": true,
+ 		"mqs": false,
  		"find": true,
  		"views-all": true,
  		"views-annotations": true,
@@ -24,8 +24,8 @@
  		"views-new": true,
  		"tools-all": true,
  		"tools-follow": false,
- 		"tools-reload": false,
- 		"tools-shortcuts": true,
+ 		"tools-reload": true,
+ 		"tools-shortcuts": false,
  		"tools-docs": true
  	},
   "patternStates": {

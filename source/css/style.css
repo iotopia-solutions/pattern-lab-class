@@ -291,12 +291,14 @@ body {
   font-size: 36px;
   font-family: "Open Sans";
   line-height: 0.833;
+  margin-bottom: 20px;
 }
 
 .secondary-title {
   font-size: 30px;
   font-family: "Open Sans";
   color: white;
+  margin-bottom: 20px;
 }
 
 .subheader-text {
@@ -316,6 +318,7 @@ body {
   color: white;
   line-height: 0.833;
   text-transform: uppercase;
+  margin-bottom: 20px;
 }
 
 .line {
@@ -4838,6 +4841,7 @@ a .icon-rotate-90:before, a .icon-rotate-180:before, a .icon-rotate-270:before, 
   line-height: 2.143;
   width: 272px;
   height: 57px;
+  margin-bottom: 20px;
 }
 
 .button--action {
@@ -4882,9 +4886,9 @@ a .icon-rotate-90:before, a .icon-rotate-180:before, a .icon-rotate-270:before, 
 }
 
 .pagination-container {
-  background-color: gray;
   display: flex;
   justify-content: space-around;
+  width: 30%;
 }
 
 .image-box-block {
@@ -4972,14 +4976,22 @@ a .icon-rotate-90:before, a .icon-rotate-180:before, a .icon-rotate-270:before, 
 }
 
 .revolution-slider {
-  display: flex;
   background-color: black;
+  padding: 200px 0px 30px;
 }
-.revolution-slider .next-arrow-container {
+.revolution-slider .revolution-slider--content {
+  display: flex;
+}
+.revolution-slider .revolution-slider--content .next-arrow-container {
   flex: 1;
 }
-.revolution-slider .revolution-content {
+.revolution-slider .revolution-slider--content .revolution-content {
   flex: 2;
+}
+.revolution-slider .revolution-slider--pagination {
+  display: flex;
+  justify-content: center;
+  margin-top: 10%;
 }
 
 /* ============= End of navigation ================= */

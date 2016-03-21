@@ -1,0 +1,142 @@
+/* ============= Start of container =================
+* Set the reoccuring container styles that appear in the theme
+*/
+
+.brand-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.revolution-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  .primary-title {
+    color: white;
+  }
+}
+
+.pagination-container {
+  display: flex;
+  justify-content: space-around;
+  width: 30%;
+}
+
+.image-box-block {
+  width: 458px;
+}
+
+.image-box-block--container {
+  width: 80%;
+  display: flex;
+  justify-content: center;
+}
+
+.icon-box--container {
+  width: 30%;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.icon-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.contact-block {
+  width: 15%;
+  .subheader-text {
+    color: white;
+  }
+  .description-text {
+    color: rgb(153, 153, 153);
+  }
+}
+
+.features-icon-block {
+  width: 40%;
+  display: flex;
+  margin: 30px;
+  .features-icon-block--icon {
+    flex: 1;
+  }
+  .features-icon-block--info {
+    flex: 4;
+  }
+}
+
+.portfolio-item {
+  background-color: rgb(240, 246, 253);
+  width: 480px;
+  height: 420px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  .secondary-title {
+    color: black;
+  }
+}
+
+.portfolio-item--image {
+  background-image: url('https://www.petfinder.com/wp-content/uploads/2012/11/140272627-grooming-needs-senior-cat-632x475.jpg');
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.call-to-action {
+  background-color: rgb(130, 180, 64);
+  display: flex;
+  justify-content: space-around;
+  padding: 20px;
+}
+
+.info-block {
+  width: 50%;
+  padding: 20px;
+}
+
+.features-icon-list {
+  padding: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-around;
+  .features-icon-list--row {
+    width: 85%;
+    justify-content: space-around;
+    flex-direction: row;
+    display: flex;
+  }
+}
+
+.footer {
+  background-color: rgb(36, 36, 39);
+  padding: 20px 100px 20px 100px;
+  .footer--brand {
+    a {
+      margin: 0 auto;
+    }
+    display: flex;
+    flex-direction: column;
+  }
+  .footer--content-block {
+    display: flex;
+    justify-content: space-around;
+    .brand-name {
+      color: white;
+    }
+  }
+  .copyright {
+    color: white;
+  }
+}
+/* ============= End of containers ================= */

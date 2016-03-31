@@ -4920,11 +4920,6 @@ a .icon-rotate-90:before, a .icon-rotate-180:before, a .icon-rotate-270:before, 
 /* ============= Start of container =================
 * Set the reoccuring container styles that appear in the theme
 */
-.sg-main,
-.sg-single-pattern {
-  background-color: rgba(12, 22, 6, 0.17);
-}
-
 .brand-container {
   display: flex;
   flex-direction: row;
